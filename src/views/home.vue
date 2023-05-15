@@ -1,8 +1,8 @@
 <template>
-    <div><nav_button onclick="window.location.href='https://appointments.optikit.dk/da/NjY4MjlkZmEtYTEwOC00MjM2LTgyOGYtNWE1N2RkZGU5NjM5?store=2059';"/></div>
+    <div><nav_button onclick="window.location.href='https://appointments.optikit.dk/da/NjY4MjlkZmEtYTEwOC00MjM2LTgyOGYtNWE1N2RkZGU5NjM5?store=2059';" buttontext = "Book tid"/></div>
     <div><RouterLink to="/underholdning"><nav_button buttontext = "Underholdning"/></RouterLink></div>
     <div><RouterLink to="/synsprofil"><nav_button buttontext = "Synsprofil"/></RouterLink></div>
-    <div><RouterLink to="/infomation"><nav_button buttontext = "Infomation"/></RouterLink></div>
+    <div><RouterLink to="/information"><nav_button buttontext = "Information"/></RouterLink></div>
     <plantanimation/>
 </template>
 
