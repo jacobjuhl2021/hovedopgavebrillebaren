@@ -6,7 +6,7 @@ import { RouterLink, RouterView } from 'vue-router'
 
         <RouterLink to="/">Book tid</RouterLink>
         <RouterLink to="/about">Underholdning</RouterLink>
-
+        <RouterLink to="/infomation">infomation</RouterLink>
   <RouterView />
 </template>
 
