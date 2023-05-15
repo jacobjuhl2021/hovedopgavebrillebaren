@@ -3,15 +3,13 @@ import { RouterLink, RouterView } from 'vue-router'
 </script>
 
 <template>
-
-        <RouterLink to="/">Book tid</RouterLink>
-        <RouterLink to="/about">Underholdning</RouterLink>
-        <RouterLink to="/infomation">infomation</RouterLink>
+        <RouterLink to="/">home</RouterLink>
+        <RouterLink to="/underholdning">Underholdning</RouterLink>
+        <RouterLink to="/synsprofil">Synsprofil</RouterLink>
+        <RouterLink to="/infomation">Infomation</RouterLink>
   <RouterView />
 </template>
 
 <style scoped>
-.router-link-active {
-  
-}
+
 </style>

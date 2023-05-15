@@ -1,18 +1,17 @@
 import { createRouter, createWebHistory } from 'vue-router'
-import book_tid from '../views/book_tid.vue'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
   routes: [
     {
-      path: '/',
-      name: 'Book_tid',
-      component: book_tid
+      path: '/underholdning',
+      name: 'underholdning',
+      component: () => import('../views/underholdning.vue')
     },
     {
-      path: '/about',
-      name: 'about',
-      component: () => import('../views/AboutView.vue')
+      path: '/synsprofil',
+      name: 'synsprofil',
+      component: () => import('../views/synsprofil.vue')
     },
     {
       path: '/infomation',
