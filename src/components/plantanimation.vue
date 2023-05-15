@@ -298,8 +298,7 @@ C330.5,639.2,333.6,651.1,325.8,653.6z"/>
 	.st8{clip-path:url(#SVGID_00000010990044975184779510000013129463459327449239_);}
 	.cls-3 {stroke: #000;stroke-miterlimit: 10;stroke-width: 8px;}
     .cls-3, .cls-4 {fill: none;}
-</style>
-<style scoped>
+
 svg{
     height: 30%;
     width:  30%;
