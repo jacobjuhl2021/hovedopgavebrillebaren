@@ -6,16 +6,9 @@ import { RouterLink, RouterView } from 'vue-router'
         <RouterLink to="/">home</RouterLink>
         <RouterLink to="/underholdning">Underholdning</RouterLink>
         <RouterLink to="/synsprofil">Synsprofil</RouterLink>
-        <div class="btn btn-primary">
-          <RouterLink to="/infomation">Infomation</RouterLink>
-        </div>
-  <RouterView />
+        <RouterLink to="/infomation"></RouterLink>
+        <RouterView />
 </template>
 
 <style scoped>
-.router-link{
-  color: black;
-  text-decoration: none;
-  font-size: xx-large;
-}
 </style>
