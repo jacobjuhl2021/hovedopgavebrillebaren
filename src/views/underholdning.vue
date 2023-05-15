@@ -1,3 +1,3 @@
 <template>
-    <RouterLink to="/home"><button>Home</button></RouterLink>
+    <RouterLink to="/home"><button>Gå tilbage</button></RouterLink>
 </template>
