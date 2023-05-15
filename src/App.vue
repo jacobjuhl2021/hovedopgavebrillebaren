@@ -6,7 +6,9 @@ import { RouterLink, RouterView } from 'vue-router'
         <RouterLink to="/">home</RouterLink>
         <RouterLink to="/underholdning">Underholdning</RouterLink>
         <RouterLink to="/synsprofil">Synsprofil</RouterLink>
-        <RouterLink to="/infomation">Infomation</RouterLink>
+        <div class="button">
+          <RouterLink to="/infomation">Infomation</RouterLink>
+        </div>
   <RouterView />
 </template>
 
