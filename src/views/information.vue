@@ -1,6 +1,4 @@
 <template>
-    <RouterLink to="/home"><button>Gå tilbage</button></RouterLink>
-
 	<main>
 		<h1>Vue Popups</h1>
 		<button @click="() => TogglePopup('buttonTrigger')">Open Popup</button>
@@ -49,7 +47,7 @@ export default {
 }
 </script>
 
-<style lang="scss">
+<style>
 #app {
 	font-family: Avenir, Helvetica, Arial, sans-serif;
 	-webkit-font-smoothing: antialiased;

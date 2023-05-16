@@ -1,4 +1,7 @@
 <template>
+    <RouterLink to="/home"><button>Gå tilbage</button></RouterLink>
+
+    
 	<div class="popup">
 		<div class="popup-inner">
 			<slot />
@@ -15,7 +18,7 @@ export default {
 }
 </script>
 
-<style lang="scss" scoped>
+<style scoped>
 .popup {
 	position: fixed;
 	top: 0;
@@ -29,9 +32,11 @@ export default {
 	align-items: center;
 	justify-content: center;
 
-	.popup-inner {
+	
+}
+
+.popup .popup-inner {
 		background: #FFF;
 		padding: 32px;
 	}
-}
 </style>
