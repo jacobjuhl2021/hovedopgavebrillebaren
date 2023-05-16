@@ -1,8 +1,5 @@
 <template>
-    <div class="container">
-        <div class="nav-button">{{ buttontext }}</div>
-        <slot></slot>
-    </div>
+    <button class="nav-button">{{ buttontext }}</button>
 </template>
 
 <script>
@@ -18,13 +15,17 @@ export default {
 
 <style scoped>
 .nav-button {
+text-align: center;
 width: 312px;
 height: 105px;
 left: 72px;
-top: 352.26px;
+top: 352px;
 border-style: none;
 background: #0B426E;
-border-radius: 21.1695px;
+border-radius: 21px;
+color: white;
+font-size: 20px;
 }
+
 
 </style>

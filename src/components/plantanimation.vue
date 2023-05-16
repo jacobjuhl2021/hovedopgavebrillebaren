@@ -1,6 +1,4 @@
 <template>
-<div class="container">
-
 <div class="xtransform"></div>
 <div class="xskæringspunkt"></div>
 <div class="yskæringspunkt"></div>
@@ -281,7 +279,6 @@ C330.5,639.2,333.6,651.1,325.8,653.6z"/>
 	c-0.5-0.1-1.1-0.2-1.7-0.4c-1.3-0.2-2.6-0.4-3.9-0.4c-0.1,0-0.2,0-0.2,0c-0.4,0-0.8,0-1.1,0C300.8,570.5,300.3,570.5,299.8,570.6z"
 	/>
 </svg>
-</div> 
 </template>
 
 
