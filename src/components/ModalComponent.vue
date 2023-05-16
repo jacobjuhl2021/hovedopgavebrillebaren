@@ -1,40 +1,22 @@
 <template>
-    <div>
-      <!-- Button to trigger the modal -->
-      <button type="button" class="btn btn-primary" @click="openModal">Open Modal</button>
-  
-      <!-- Modal component -->
-      <b-modal v-model="showModal" title="Modal Title" @hide="closeModal">
-        <p>Modal content goes here.</p>
-        <template #modal-footer>
-          <b-button variant="secondary" @click="closeModal">Close</b-button>
-          <b-button variant="primary">Save changes</b-button>
-        </template>
-      </b-modal>
-    </div>
-  </template>
-  
-  <script>
+<!-- Button trigger modal -->
+<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+  Launch demo modal
+</button>
 
-  
-  export default {
-    components: {
-      BButton,
-      BModal
-    },
-    data() {
-      return {
-        showModal: false
-      };
-    },
-    methods: {
-      openModal() {
-        this.showModal = true;
-      },
-      closeModal() {
-        this.showModal = false;
-      }
-    }
-  };
-  </script>
-  
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-body">
+        ...
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+</template>
