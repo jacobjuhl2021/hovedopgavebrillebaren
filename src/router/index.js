@@ -14,9 +14,9 @@ const router = createRouter({
       component: () => import('../views/synsprofil.vue')
     },
     {
-      path: '/infomation',
-      name: '/infomation',
-      component: () => import('../views/infomation.vue')
+      path: '/information',
+      name: '/information',
+      component: () => import('../views/information.vue')
     },
     {
       path: '/home',
