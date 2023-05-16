@@ -1,18 +1,8 @@
 <template>
-    <div>
-      <!-- Other content of your Vue component -->
-  
-      <modal-component />
-    </div>
+    <RouterLink to="/home"><button>Gå tilbage</button></RouterLink>
   </template>
   
   <script>
-  import ModalComponent from '../components/ModalComponent.vue';
-  
-  export default {
-    components: {
-      ModalComponent
-    }
-  };
+
   </script>
   
