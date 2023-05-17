@@ -103,5 +103,6 @@ flex-direction: column;
 .modal-dialog{
 
     max-width: 800px;
+    margin-left: 60px;
 }
 </style>
