@@ -1,6 +1,5 @@
 <template>
-    <RouterLink to="/home"><button>Gå tilbage</button></RouterLink>
-
+    <backbutton/>
     <div class="container">
         <div class="row">
             <div class="col-6">
@@ -20,10 +19,7 @@
                     <task_button class="eyesight-btn" task_buttontext = "Social blindhed 0,1"/>
                 </div>
             </div>
-        </div>
-
-        <div class="row">
-            <div class="col-6">
+            <div class="col-6 Entertainment-text">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit, quasi? Quidem dicta excepturi magnam rerum accusantium recusandae harum nobis est exercitationem molestias totam, necessitatibus autem tempore nihil eveniet incidunt quisquam.
             </div>
         </div>
@@ -33,6 +29,7 @@
 
 <script>
 import task_button from '../components/task_button.vue'
+import backbutton from '../components/backbutton.vue'
 
 export default {
     data() {
@@ -40,23 +37,29 @@ export default {
     };
   },
   components: {
-    task_button
+    task_button,
+    backbutton
   }
 }
 </script>
 
 <style>
-body{
+body {
     background-color: #f5ede1;
 }
 
-.eyesight_box{
+.Entertainment-text {
+    position: absolute;
+    top: 578px;
+}
+
+.eyesight_box {
     left: 76px;
     top: 124px;
     background-color: black;
 }
 
-.eyesight_box-btn{
+.eyesight_box-btn {
     display: flex;
     align-items: flex-end;
     flex-direction: column;
@@ -67,11 +70,12 @@ body{
 .btn_option {
     text-align: center;
     font-size: 30px;
-    margin-right: -13px;
 }
 
-.eyesight-btn{
-    margin: 10px;
+.eyesight-btn {
+    align-items: center;
+    justify-content: center;
+    margin: 20px;
     display: flex;
     flex-direction: column;
     font-size: 16px;
