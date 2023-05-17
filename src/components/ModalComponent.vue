@@ -102,7 +102,9 @@ flex-direction: column;
 }
 .modal-dialog{
 
-    max-width: 800px;
+    max-width: 600px;
+    height: 500px;
+    max-height: 500px;
     margin-left: 60px;
 }
 </style>
