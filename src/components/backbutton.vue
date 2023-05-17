@@ -17,6 +17,7 @@
 
 <style>
 .go-back{
+    z-index: 2;
     display: flex;
     flex-direction: row;
     background-color: #dfd3c1;
