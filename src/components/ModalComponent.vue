@@ -12,7 +12,7 @@
 
                 <div class="modal-row2">
                     <!-- Buttons -->
-                    <task_button class="modalbutton" data-bs-toggle="modal" data-bs-target="#exampleModal" @click="showText(5)" task_buttontext="Button 5"></task_button>
+                    <task_button class="modalbutton" data-bs-toggle="modal" data-bs-target="#exampleModal" @click="showText(5)" task_buttontext="Få en øjenoperation"></task_button>
                     <task_button class="modalbutton" data-bs-toggle="modal" data-bs-target="#exampleModal" @click="showText(6)" task_buttontext="Button 6"></task_button>
                     <task_button class="modalbutton" data-bs-toggle="modal" data-bs-target="#exampleModal" @click="showText(7)" task_buttontext="Button 7"></task_button>
                     <task_button class="modalbutton" data-bs-toggle="modal" data-bs-target="#exampleModal" @click="showText(8)" task_buttontext="Button 8"></task_button>
@@ -60,8 +60,12 @@ import task_button from './task_button.vue'
           this.currentText = 'Text for Button 8';
         }
         
+
+        showText(textNumber) {
         // Show the modal
         $('#exampleModal').modal('show');
+        $('body').addClass('modal-open-nobackdrop');
+        }
       }
     },
     data() {
@@ -70,6 +74,8 @@ import task_button from './task_button.vue'
       };
     }
   };
+
+
   </script>
   
 <style scoped>
@@ -97,14 +103,26 @@ flex-direction: column;
 .modal-content{
     display: flex;
     align-items: center;
-    
+    max-width: 600px;
+    min-height: 500px;
+    max-height: 500px; 
+
+    background-color: #04192A;
+    color: white;
+    font-size: 20px;
 
 }
 .modal-dialog{
 
     max-width: 600px;
-    height: 500px;
-    max-height: 500px;
-    margin-left: 60px;
+    min-height: 449px;
+    max-height: 449px;
+    margin-left: 33px;
+    margin-top: calc(30vh + 60px);
+
+}
+
+.modal-backdrop.modal-open-nobackdrop {
+  background-color: transparent;
 }
 </style>
