@@ -2,7 +2,7 @@
 <div class="information-layout">
     <backbutton/>
     <img class="information-img" src="../assets/img1.png">
-    <ModalComponent/>
+    <ModalComponent class="information-modalc"></ModalComponent>/>
 
     
     
@@ -34,8 +34,10 @@ export default {
     .information-layout{
         display: flex;
         flex-direction: column;
+        
     }
     .information-img{
-        height: 30vh;
+        height: 220px;
+        margin-top: -30px;
     }
 </style>  

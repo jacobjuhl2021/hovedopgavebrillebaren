@@ -21,9 +21,9 @@
             </div>
         </div>
       <!-- Modal -->
-      <div class="modal" id="exampleModal" aria-hidden="true"> <!-- tabindex="-1" aria-labelledby="exampleModalLabel" -->
+      <div class="modal" ref="exampleModal" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true" data-mdb-backdrop="false" data-mdb-keyboard="true">
         <div class="modal-dialog">
-          <div class="modal-content modal-custom">
+          <div class="modal-content">
             <div class="modal-body">
               {{ currentText }}
             </div>
@@ -35,12 +35,23 @@
   
 <script>
 import task_button from './task_button.vue'
-  export default {
-    components: {
+
+export default {
+  components: {
     task_button
   },
-    methods: {
-        showText(textNumber) {
+  mounted() {
+    this.$watch('$refs.exampleModal', () => {
+      this.$nextTick(() => {
+        const backdrop = document.querySelector('.modal-backdrop');
+        if (backdrop) {
+          backdrop.style.backgroundColor = 'yellow';
+        }
+      });
+    });
+  },
+  methods: {
+    showText(textNumber) {
       // Update the currentText based on the button clicked
       if (textNumber === 1) {
         this.currentText = 'Text for Button 1';
@@ -61,7 +72,9 @@ import task_button from './task_button.vue'
       }
 
       // Show the modal
-      $('#exampleModal').modal('show');
+      this.$nextTick(() => {
+        this.$refs.exampleModal.show();
+      });
     }
   },
   data() {
@@ -70,58 +83,63 @@ import task_button from './task_button.vue'
     };
   }
 };
+
+
   </script>
   
 <style scoped>
-.modal-row-container{
-margin-top: 4%;
-display: flex;
-flex-direction: row;
-justify-content: space-between;
-}
-.modal-row1{
-display: flex;
-flex-direction: column;
-}
-.modal-row2{
-display: flex;
-flex-direction: column;
-}
-.modalbutton{
-    margin: 7px;
+
+.modal-row-container {
+  margin-top: 4%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
 
-.modal-content{
-    display: flex;
-    align-items: center;
-    
-    max-width: 600px;
-    min-height: 500px;
-    max-height: 500px; 
-
-    background-color: #04192A;
-    color: white;
-    font-size: 20px;
-
-}
-.modal-dialog{
-
-    max-width: 600px;
-    height: 500px;
-    max-height: 500px;
-    margin-left: 60px;
-    min-height: 449px;
-    max-height: 449px;
-    margin-left: 33px;
-    margin-top: calc(30vh + 60px);
-
+.modal-row1 {
+  display: flex;
+  flex-direction: column;
 }
 
-.modal-backdrop.modal-open-nobackdrop {
-  background-color: transparent;
-}
-.show{
-    background-color: transparent;
+.modal-row2 {
+  display: flex;
+  flex-direction: column;
 }
 
+.modalbutton {
+  margin: 7px;
+  z-index: 2000;
+}
+
+.modal-content {
+  display: flex;
+  align-items: center;
+  max-width: 600px;
+  min-height: 500px;
+  max-height: 500px;
+  background-color: #04192A;
+  color: white;
+  font-size: 20px;
+}
+
+.modal-dialog {
+  max-width: 600px;
+  min-height: 484px;
+  max-height: 484px;
+  margin-left: 33px;
+  margin-top: 317px;
+}
+.modal-body{
+    z-index: 2001;
+}
+
+
+
+
+/*
+
+*/
+/*
+
+*/
 </style>
