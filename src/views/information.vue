@@ -1,6 +1,6 @@
 <template>
 <div class="information-layout">
-    <RouterLink to="/home"><button>Gå tilbage</button></RouterLink>
+    <backbutton/>
     <img class="information-img" src="../assets/img1.png">
     <ModalComponent/>
 
@@ -13,6 +13,7 @@
 <script>
 import ModalComponent from '../components/ModalComponent.vue'
 import task_button from '../components/task_button.vue'
+import backbutton from '../components/backbutton.vue'
 export default {
     data() {
     return {
@@ -20,7 +21,8 @@ export default {
   },
   components: {
     ModalComponent,
-    task_button
+    task_button,
+    backbutton
   }
 }
 </script>
