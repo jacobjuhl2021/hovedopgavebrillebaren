@@ -44,10 +44,18 @@ export default {
 
 <style>
 
-.content{
+body{
     background-color: #f5ede1;
+    display: flex;
+    justify-content: center;
+    overflow-y: hidden;
+}
+
+.content{
+    padding-top: 75px;
     width: 100%;
-    height: auto;
+    height: 810px;
+    
 }
 
 .top_part {
