@@ -40,42 +40,36 @@ import task_button from './task_button.vue'
     task_button
   },
     methods: {
-      showText(textNumber) {
-        // Update the currentText based on the button clicked
-        if (textNumber === 1) {
-          this.currentText = 'Text for Button 1';
-        } else if (textNumber === 2) {
-          this.currentText = 'Text for Button 2';
-        } else if (textNumber === 3) {
-          this.currentText = 'Text for Button 3';
-        } else if (textNumber === 4) {
-          this.currentText = 'Text for Button 4';
-        } else if (textNumber === 5) {
-          this.currentText = 'Med EuroEyes øjenoperation kan du helt smide behovet for briller. Forløbet lyder som følgende Samtale hos Brillebaren om egnethed Forundersøgelser hos EuroEyes Operation Brillebaren samarbejder med EuroEyes International Eye Clinics  som er en privatejet øjenklinikgruppe med 28 klinikker i hhv. Danmark, Tyskland og Kina. Brillebaren laver for- og efterundersøgelser for disse operationer. Brillebaren rådgiver dig gerne videre i processen.';
-        } else if (textNumber === 6) {
-          this.currentText = 'Text for Button 6';
-        } else if (textNumber === 7) {
-          this.currentText = 'Text for Button 7';
-        } else if (textNumber === 8) {
-          this.currentText = 'Text for Button 8';
-        }
-        
-
         showText(textNumber) {
-        // Show the modal
-        $('#exampleModal').modal('show');
-        $('body').addClass('modal-open-nobackdrop');
-        }
+      // Update the currentText based on the button clicked
+      if (textNumber === 1) {
+        this.currentText = 'Text for Button 1';
+      } else if (textNumber === 2) {
+        this.currentText = 'Text for Button 2';
+      } else if (textNumber === 3) {
+        this.currentText = 'Text for Button 3';
+      } else if (textNumber === 4) {
+        this.currentText = 'Text for Button 4';
+      } else if (textNumber === 5) {
+        this.currentText = 'Med EuroEyes øjenoperation kan du helt smide behovet for briller. Forløbet lyder som følgende Samtale hos Brillebaren om egnethed Forundersøgelser hos EuroEyes Operation Brillebaren samarbejder med EuroEyes International Eye Clinics  som er en privatejet øjenklinikgruppe med 28 klinikker i hhv. Danmark, Tyskland og Kina. Brillebaren laver for- og efterundersøgelser for disse operationer. Brillebaren rådgiver dig gerne videre i processen.';
+      } else if (textNumber === 6) {
+        this.currentText = 'Text for Button 6';
+      } else if (textNumber === 7) {
+        this.currentText = 'Text for Button 7';
+      } else if (textNumber === 8) {
+        this.currentText = 'Text for Button 8';
       }
-    },
-    data() {
-      return {
-        currentText: ''
-      };
+
+      // Show the modal
+      $('#exampleModal').modal('show');
     }
-  };
-
-
+  },
+  data() {
+    return {
+      currentText: ''
+    };
+  }
+};
   </script>
   
 <style scoped>
@@ -97,9 +91,7 @@ flex-direction: column;
     margin: 7px;
 }
 
-.modal-body{
-    
-}
+
 .modal-content{
     display: flex;
     align-items: center;
@@ -122,7 +114,8 @@ flex-direction: column;
 
 }
 
-.modal-backdrop.modal-open-nobackdrop {
-  background-color: transparent;
+
+.show{
+    background-color: transparent;
 }
 </style>
