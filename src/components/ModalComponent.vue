@@ -21,9 +21,9 @@
             </div>
         </div>
       <!-- Modal -->
-      <div class="modal fade" id="exampleModal" aria-hidden="true"> <!-- tabindex="-1" aria-labelledby="exampleModalLabel" -->
+      <div class="modal" id="exampleModal" aria-hidden="true"> <!-- tabindex="-1" aria-labelledby="exampleModalLabel" -->
         <div class="modal-dialog">
-          <div class="modal-content">
+          <div class="modal-content modal-custom">
             <div class="modal-body">
               {{ currentText }}
             </div>
@@ -51,7 +51,7 @@ import task_button from './task_button.vue'
         } else if (textNumber === 4) {
           this.currentText = 'Text for Button 4';
         } else if (textNumber === 5) {
-          this.currentText = 'Text for Button 5';
+          this.currentText = 'Med EuroEyes øjenoperation kan du helt smide behovet for briller. Forløbet lyder som følgende Samtale hos Brillebaren om egnethed Forundersøgelser hos EuroEyes Operation Brillebaren samarbejder med EuroEyes International Eye Clinics  som er en privatejet øjenklinikgruppe med 28 klinikker i hhv. Danmark, Tyskland og Kina. Brillebaren laver for- og efterundersøgelser for disse operationer. Brillebaren rådgiver dig gerne videre i processen.';
         } else if (textNumber === 6) {
           this.currentText = 'Text for Button 6';
         } else if (textNumber === 7) {
@@ -89,5 +89,19 @@ flex-direction: column;
 }
 .modalbutton{
     margin: 7px;
+}
+
+.modal-body{
+    
+}
+.modal-content{
+    display: flex;
+    align-items: center;
+    
+
+}
+.modal-dialog{
+
+    max-width: 800px;
 }
 </style>

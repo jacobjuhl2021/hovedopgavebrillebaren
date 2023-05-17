@@ -14,6 +14,7 @@ export default {
 </script>
 
 <style scoped>
+
 .task-button {
 text-align: center;
 width: 162px;

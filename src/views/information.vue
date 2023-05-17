@@ -25,7 +25,10 @@ export default {
 }
 </script>
 
-<style scoped>
+<style>
+    body{
+        background-color: #f5ede1;
+    }
     .information-layout{
         display: flex;
         flex-direction: column;
