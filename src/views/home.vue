@@ -46,8 +46,6 @@ export default {
 
 body{
     background-color: #f5ede1;
-    display: flex;
-    justify-content: center;
     overflow-y: hidden;
 }
 

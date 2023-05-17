@@ -10,7 +10,7 @@
 	 Højde:  820.7 px
 -->
 
-<svg version="1.1" id="Lag_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+<svg class="plante" version="1.1" id="Lag_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 viewBox="0 0 674 820.7"  xml:space="preserve">
 
 <rect x="-331" y="-136" class="st0" width="300" height="1296"/>
@@ -288,7 +288,7 @@ C330.5,639.2,333.6,651.1,325.8,653.6z"/>
 	.cls-3 {stroke: #000;stroke-miterlimit: 10;stroke-width: 8px;}
     .cls-3, .cls-4 {fill: none;}
 
-svg{
+.plante{
 	margin-left: 35px;
 	z-index: 1;
     height: 30%;
