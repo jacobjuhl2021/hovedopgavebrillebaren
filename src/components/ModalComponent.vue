@@ -12,7 +12,7 @@
 
                 <div class="modal-row2">
                     <!-- Buttons -->
-                    <task_button class="modalbutton" data-bs-toggle="modal" data-bs-target="#exampleModal" @click="showText(5)" task_buttontext="Få en øjenoperation"></task_button>
+                    <task_button class="modalbutton" data-bs-toggle="modal" data-bs-target="#exampleModal" @click="showText(5)" task_buttontext="Button 5"></task_button>
                     <task_button class="modalbutton" data-bs-toggle="modal" data-bs-target="#exampleModal" @click="showText(6)" task_buttontext="Button 6"></task_button>
                     <task_button class="modalbutton" data-bs-toggle="modal" data-bs-target="#exampleModal" @click="showText(7)" task_buttontext="Button 7"></task_button>
                     <task_button class="modalbutton" data-bs-toggle="modal" data-bs-target="#exampleModal" @click="showText(8)" task_buttontext="Button 8"></task_button>
@@ -91,10 +91,10 @@ flex-direction: column;
     margin: 7px;
 }
 
-
 .modal-content{
     display: flex;
     align-items: center;
+    
     max-width: 600px;
     min-height: 500px;
     max-height: 500px; 
@@ -107,6 +107,9 @@ flex-direction: column;
 .modal-dialog{
 
     max-width: 600px;
+    height: 500px;
+    max-height: 500px;
+    margin-left: 60px;
     min-height: 449px;
     max-height: 449px;
     margin-left: 33px;
@@ -114,8 +117,11 @@ flex-direction: column;
 
 }
 
-
+.modal-backdrop.modal-open-nobackdrop {
+  background-color: transparent;
+}
 .show{
     background-color: transparent;
 }
+
 </style>
