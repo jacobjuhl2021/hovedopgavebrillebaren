@@ -1,7 +1,7 @@
 <template>
     <div class="content">
         <div class="top_part">
-            <nav_button class="Nav_position" onclick="window.location.href='https://appointments.optikit.dk/da/NjY4MjlkZmEtYTEwOC00MjM2LTgyOGYtNWE1N2RkZGU5NjM5?store=2059';" buttontext = "Book tid"/>
+            <RouterLink to="/booktid"><nav_button class="Nav_position" buttontext = "Book tid"/></RouterLink>
         </div>
         <div class="container">
             <div class="row justify-content-center align-items-center">
@@ -46,7 +46,6 @@ export default {
 
 body{
     background-color: #f5ede1;
-    overflow-y: hidden;
 }
 
 .content{

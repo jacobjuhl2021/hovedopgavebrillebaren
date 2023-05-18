@@ -17,11 +17,11 @@
 
 <style>
 .go-back{
+    position: fixed;
     z-index: 2;
     display: flex;
     flex-direction: row;
     background-color: #dfd3c1;
-    margin-bottom: 30px;
 }
 
 .nav_back{

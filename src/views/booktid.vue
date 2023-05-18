@@ -3,7 +3,7 @@
     <div class="container-fluid">
         <div class="row">
             <div class="col">
-                <iframe class="synsprofil" src="https://myvisionprofile.zeiss.com/ecp/Nf0IflUV?fbclid=IwAR3j8WAJ3ZGBgkI_hG9Wiee9hd0R_7OLVj6LgrNHW4HJtKW3Fuh6Y8uHo0Y#intro/introduction-02" frameborder="0"></iframe>
+                <iframe class="booktid" src="https://appointments.optikit.dk/da/NjY4MjlkZmEtYTEwOC00MjM2LTgyOGYtNWE1N2RkZGU5NjM5?store=2059" frameborder="0"></iframe>
             </div>
         </div>
     </div>
@@ -28,10 +28,9 @@ body {
     background-color: #f5ede1;
 }
 
-.synsprofil {
+.booktid {
     width: 100%;
     height: 810px;
     margin-top: 74px;
 }
-
 </style>
