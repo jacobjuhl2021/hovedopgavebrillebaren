@@ -38,6 +38,6 @@ export default {
     }
     .information-img{
         height: 220px;
-        margin-top: -30px;
+        margin-top: 30px;
     }
 </style>  

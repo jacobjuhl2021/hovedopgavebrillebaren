@@ -17,8 +17,8 @@ export default {
 
 .task-button {
 text-align: center;
-width: 162px;
-height: 55px;
+width: 200px;
+height: 70px;
 left: 72px;
 top: 352px;
 border-style: none;
