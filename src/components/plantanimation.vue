@@ -289,12 +289,13 @@ C330.5,639.2,333.6,651.1,325.8,653.6z"/>
     .cls-3, .cls-4 {fill: none;}
 
 .plante{
-	margin-left: 35px;
+	margin-left: 40px;
 	z-index: 1;
     height: 30%;
-    width:  35%;
+    width:  auto;
 	animation: bounce 3.8s infinite ease-in-out;
 }
+
 @keyframes bounce {
 	0%{
 		transform: translateY(70px);

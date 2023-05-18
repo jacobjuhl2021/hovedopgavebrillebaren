@@ -1,7 +1,7 @@
 <template>
     <backbutton/>
     <div class="container">
-        <div class="row">
+        <div class="row" style="justify-content: space-between">
             <div class="col-6">
                 <div class="eyesight_box">
                     <img src="../assets/brillebiksen.jpg" alt="brillebaren">
