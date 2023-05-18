@@ -24,9 +24,14 @@ export default {
 </script>
 
 <style>
-.synsprofil{
+body {
+    background-color: #f5ede1;
+}
+
+.synsprofil {
     width: 100%;
     height: 810px;
+    margin-top: 74px;
 }
 
 </style>

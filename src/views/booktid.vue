@@ -24,8 +24,13 @@ export default {
 </script>
 
 <style>
-.booktid{
+body {
+    background-color: #f5ede1;
+}
+
+.booktid {
     width: 100%;
     height: 810px;
+    margin-top: 74px;
 }
 </style>

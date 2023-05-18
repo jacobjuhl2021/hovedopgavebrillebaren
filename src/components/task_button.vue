@@ -1,5 +1,5 @@
 <template>
-    <button class="task-button">{{ task_buttontext }}</button>
+    <button class="task-button" >{{ task_buttontext }}</button>
 </template>
 
 <script>
@@ -13,7 +13,7 @@ export default {
 };
 </script>
 
-<style scoped>
+<style>
 
 .task-button {
 text-align: center;
