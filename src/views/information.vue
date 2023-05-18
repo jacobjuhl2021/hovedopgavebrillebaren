@@ -2,7 +2,7 @@
 <div class="information-layout">
     <backbutton/>
     <img class="information-img" src="../assets/img1.png">
-    <ModalComponent class="information-modalc"></ModalComponent>/>
+    <ModalComponent class="information-modalc"></ModalComponent>
 
     
     
