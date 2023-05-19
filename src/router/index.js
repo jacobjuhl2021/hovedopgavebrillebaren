@@ -15,7 +15,7 @@ const router = createRouter({
     },
     {
       path: '/information',
-      name: '/information',
+      name: 'information',
       component: () => import('../views/information.vue')
     },
     {
@@ -25,7 +25,7 @@ const router = createRouter({
     },
     {
       path: '/booktid',
-      name: '/booktid',
+      name: 'booktid',
       component: () => import('../views/booktid.vue')
     }
   ]
