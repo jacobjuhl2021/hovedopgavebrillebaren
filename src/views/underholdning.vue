@@ -64,12 +64,9 @@ export default {
 
 <style>
 body {
-    background-image: url(../assets/baggrund.jpg);
-
+    background-color: #f5ede1;
 }
-    main {
-    background-image: url('../assets/baggrund.jpg');
-  }
+
 .underhold-content{
     margin-top: 104px;
 }

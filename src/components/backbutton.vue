@@ -8,7 +8,7 @@
                     </svg>
                 </div>
                 <div class="nav_back">
-                    <RouterLink to="/home"><button class="go-back_btn">Gå tilbage</button></RouterLink>
+                    <RouterLink to="/"><button class="go-back_btn">Gå tilbage</button></RouterLink>
                 </div>
             </div>
         </div>
