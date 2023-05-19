@@ -12,5 +12,5 @@ export default defineConfig({
     }
   },
 
-    publicPath: '/',
+    base: '/hovedopgave/',
 })
