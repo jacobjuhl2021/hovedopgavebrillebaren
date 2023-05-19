@@ -34,7 +34,7 @@ import backbutton from '../components/backbutton.vue'
 export default {
     data() {
     return {
-        currentText: ''
+        currentText: '',
     };
   },
   components: {
@@ -73,7 +73,7 @@ body {
 
 .Entertainment-text {
     position: relative;
-    margin-top: -145px;
+    margin-top: -240px;
 }
 
 .eyesight_box {
