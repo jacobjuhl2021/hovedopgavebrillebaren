@@ -1,10 +1,10 @@
 <template>
     <backbutton/>
-    <div class="container underhold-content">
-        <div class="row" style="justify-content: space-between">
+    <div class="container">
+        <div class="row underhold-content">
             <div class="col-6">
                 <div class="eyesight_box">
-                    <img_layout :src="currentImage"/>
+                    <img src="../assets/brillebiksen.jpg" alt="brillebaren">
                 </div>
             </div>
         
@@ -30,19 +30,17 @@
 <script>
 import task_button from '../components/task_button.vue'
 import backbutton from '../components/backbutton.vue'
-import img_layout from '../layouts/img_layout.vue';
 
 
 export default {
     data() {
     return {
-        currentText: '',
+        currentText: ''
     };
   },
   components: {
     task_button,
-    backbutton,
-    img_layout
+    backbutton
   },
   methods: {
         showText(textNumber) {
@@ -60,9 +58,11 @@ export default {
             } else if (textNumber === 6) {
                 this.currentText = 'Du kan sandsynligvis kun se skikkelser, intet vil være klart for dig! Et forstørrelsesglas på omkring 10+ vil nok være ideelt for en person med 10% syn.';
             }
-        },
+        }
     }
 }
+
+
 </script>
 
 <style>
@@ -83,7 +83,8 @@ body {
 .eyesight_box {
     left: 76px;
     top: 124px;
-    background-color: black;
+    height: 250px;
+    background-color: lightblue;
 }
 
 .eyesight_box-btn {
