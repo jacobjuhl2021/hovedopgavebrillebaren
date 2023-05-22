@@ -114,12 +114,12 @@ var text8 = 'Du ansøger nemt og hurtigt via din smartphone – send en sms til 
 
 .dialogbox {
   width: 537px;
-  height: 484px;
+  height: 410px;
   background-color: #04192A;
   display: flex;
 
   color: white;
-  font-size: 20px;
+  font-size: 18px;
 }
 .info-text{
     margin: 10px;
