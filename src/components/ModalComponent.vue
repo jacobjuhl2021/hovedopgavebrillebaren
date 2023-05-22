@@ -2,9 +2,9 @@
   <div class="containerbox">
     <div class="info-row-container">
       <div class="info-row1">
-        <task_button class="infobutton" @click="showText(1);" task_buttontext="Button 1"></task_button>
-        <task_button class="infobutton" @click="showText(2);" task_buttontext="Button 2"></task_button>
-        <task_button class="infobutton" @click="showText(3);" task_buttontext="Button 3"></task_button>
+        <task_button class="infobutton" @click="showText(1);" task_buttontext="Grå stær"></task_button>
+        <task_button class="infobutton" @click="showText(2);" task_buttontext="Grøn stær"></task_button>
+        <task_button class="infobutton" @click="showText(3);" task_buttontext="Diabetisk øjensygdom"></task_button>
         <task_button class="infobutton" @click="showText(4);" task_buttontext="Button 4"></task_button>
       </div>
 
