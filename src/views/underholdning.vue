@@ -42,7 +42,7 @@ export default {
     data() {
     return {
         currentText: '',
-        currentImage: defaultpic
+        currentImage: pic
     };
   },
   components: {
