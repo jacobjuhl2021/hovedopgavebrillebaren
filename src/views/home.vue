@@ -48,11 +48,14 @@ export default {
 
 body{
     background-color: #f5ede1;
+    overflow-y: hidden;
 }
 
 .content{
+    margin-top: 10%;
     width: 100%;
     height: 810px;
+    
     
 }
 

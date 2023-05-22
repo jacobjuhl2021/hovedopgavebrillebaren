@@ -4,7 +4,7 @@
         <div class="row" style="justify-content: space-between">
             <div class="col-6">
                 <div class="eyesight_box">
-                    <img_layout/>
+                    <img_layout :src="currentImage"/>
                 </div>
             </div>
         
@@ -68,6 +68,7 @@ export default {
 <style>
 body {
     background-color: #f5ede1;
+    overflow-y: hidden;
 }
 
 .underhold-content{

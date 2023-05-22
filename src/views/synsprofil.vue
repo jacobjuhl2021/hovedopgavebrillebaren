@@ -26,6 +26,7 @@ export default {
 <style>
 body {
     background-color: #f5ede1;
+    overflow-y: hidden;
 }
 
 .synsprofil {
