@@ -10,7 +10,7 @@
                         <div>
                             <RouterLink to="/underholdning"><nav_button class="Nav_position" buttontext = "Underholdning"/></RouterLink>
                         </div>
-                        <img src="../assets/Billede 3 - 70p syn-min.jpg" alt="">
+                        <img src="../assets/Billede 3 - 70p syn-min.jpg" alt="testfucker">
                             <!-- <plantanimation/> -->
                         <div>
                             <RouterLink to="/information"><nav_button class="Nav_position" buttontext = "Information"/></RouterLink>
