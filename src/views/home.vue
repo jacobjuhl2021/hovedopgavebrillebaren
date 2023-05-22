@@ -7,15 +7,15 @@
             <div class="row justify-content-center align-items-center">
                 <div class="col">
                     <div class="middle_part">
-                        <!-- <div>
+                        <div>
                             <RouterLink to="/underholdning"><nav_button class="Nav_position" buttontext = "Underholdning"/></RouterLink>
-                        </div> -->
-                        <div class="plante-ani">
-                            <plantanimation/>
                         </div>
-                        <!-- <div>
+
+                            <plantanimation/>
+
+                        <div>
                             <RouterLink to="/information"><nav_button class="Nav_position" buttontext = "Information"/></RouterLink>
-                        </div> -->
+                        </div>
                     </div>
                 </div>
             </div>
@@ -64,14 +64,13 @@ body{
 
 .middle_part {
     display: flex;
+    justify-content: center;
     flex-direction: row;
     align-items: center;
 
 }
 
-.plante-ani{
-    width: 100%;
-}
+
 
 .bottom_part {
     margin-top: 35px;
