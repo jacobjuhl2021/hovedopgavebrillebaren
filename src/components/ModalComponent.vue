@@ -35,12 +35,7 @@ export default {
   components: {
     task_button
   },
-  mounted() {
-    document.addEventListener('click', this.handleClickOutside);
-  },
-  beforeUnmount() {
-    document.removeEventListener('click', this.handleClickOutside);
-  },
+
   methods: {
   showText(textNumber) {
     this.myFunction(); // Call myFunction to remove .synlighed class
