@@ -4,7 +4,7 @@
         <div class="row underhold-content">
             <div class="col-6">
                 <div class="eyesight_box">
-                    <img src="../assets/brillebiksen.jpg" alt="brillebaren">
+                    <img v-bind:src="currentImage" alt="brillebaren">
                 </div>
             </div>
         
@@ -30,12 +30,19 @@
 <script>
 import task_button from '../components/task_button.vue'
 import backbutton from '../components/backbutton.vue'
-
+import pic from '../assets/pic_one_sight.jpg'
+import pictwo from '../assets/pic_two_sight.jpg'
+import picthree from '../assets/pic_three_sight.jpg'
+import picfour from '../assets/pic_four_sight.jpg'
+import picfive from '../assets/pic_five_sight.jpg'
+import picsix from '../assets/pic_six_sight.jpg'
+import defaultpic from '../assets/brillebiksen.jpg'
 
 export default {
     data() {
     return {
-        currentText: ''
+        currentText: '',
+        currentImage: defaultpic
     };
   },
   components: {
@@ -47,21 +54,26 @@ export default {
         // Update the currentText based on the button clicked
             if (textNumber === 1) {
                 this.currentText = 'Sådan ser en person med normal synsstyrke eller 20/20 synsstyrke (tilsvarende decimal 1,0) kan generelt se skarpt og tydeligt på forskellige afstande og skelne detaljer uden problemer. De vil opleve et klart og nøjagtigt syn, både på kort og lang afstand, og vil ikke have behov for briller eller kontaktlinser for at korrigere deres syn.';
+                this.currentImage = pic;
             } else if (textNumber === 2) {
                 this.currentText = 'Du har 80% syn makker! Du kan generelt ikke se fjernsyn uden briller! En brillestyrke på omkring 1+ vil nok være ideelt for en person med 80% syn, men.';
+                this.currentImage = pictwo;
             } else if (textNumber === 3) {
                 this.currentText = 'Du har 70% syn makker! Du kan generelt ikke se fjernsyn uden briller! En brillestyrke på omkring 1+ vil nok være ideelt for en person med 70% syn.';
+                this.currentImage = picthree;
             } else if (textNumber === 4) {
                 this.currentText = 'Du har sikkert haft problemer med at se trafikken. Du må ikke køre bil uden briller ! En brillestyrke på omkring 2+ vil nok være ideelt for en person med 50% syn.';
+                this.currentImage = picfour;
             } else if (textNumber === 5) {
                 this.currentText = 'Du har virkelig brug for briller for at kunne se noget som helst. En brillestyrke på omkring 3+ vil nok være ideelt for en person med 30% syn.';
+                this.currentImage = picfive;
             } else if (textNumber === 6) {
                 this.currentText = 'Du kan sandsynligvis kun se skikkelser, intet vil være klart for dig! Et forstørrelsesglas på omkring 10+ vil nok være ideelt for en person med 10% syn.';
+                this.currentImage = picsix;
             }
         }
     }
 }
-
 
 </script>
 
