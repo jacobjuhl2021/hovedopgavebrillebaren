@@ -30,6 +30,8 @@ export default {
 <style>
     body{
         background-color: #f5ede1;
+        background-image: url(../assets/baggrund.jpg);
+        background-size: contain;
     }
     .information-layout{
         display: flex;
