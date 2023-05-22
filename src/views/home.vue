@@ -49,6 +49,8 @@ export default {
 body{
     background-color: #f5ede1;
     overflow-y: hidden;
+    background: url(../assets/baggrund.jpg) no-repeat center center fixed;
+    background-size: cover;
 }
 
 .content{

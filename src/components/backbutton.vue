@@ -21,7 +21,8 @@
     z-index: 2;
     display: flex;
     flex-direction: row;
-    background-color: #dfd3c1;
+    background-color: #E7EBE9;
+    opacity: 90%;
 }
 
 .nav_back{

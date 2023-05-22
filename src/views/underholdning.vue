@@ -36,7 +36,6 @@ import picthree from '../assets/pic_three_sight.jpg'
 import picfour from '../assets/pic_four_sight.jpg'
 import picfive from '../assets/pic_five_sight.jpg'
 import picsix from '../assets/pic_six_sight.jpg'
-import defaultpic from '../assets/brillebiksen.jpg'
 
 export default {
     data() {
@@ -81,6 +80,8 @@ export default {
 body {
     background-color: #f5ede1;
     overflow-y: hidden;
+    background: url(../assets/baggrund.jpg) no-repeat center center fixed;
+    background-size: cover;
 }
 
 .underhold-content{
@@ -89,7 +90,7 @@ body {
 
 .Entertainment-text {
     position: relative;
-    margin-top: -240px;
+    margin-top: -110px;
 }
 
 .eyesight_box {
@@ -115,7 +116,7 @@ body {
 .eyesight-btn {
     align-items: center;
     justify-content: center;
-    margin: 20px;
+    margin: 2%;
     display: flex;
     flex-direction: column;
     font-size: 16px;
