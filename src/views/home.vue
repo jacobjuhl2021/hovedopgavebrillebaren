@@ -10,8 +10,8 @@
                         <div>
                             <RouterLink to="/underholdning"><nav_button class="Nav_position" buttontext = "Underholdning"/></RouterLink>
                         </div>
-                        <div>
-                            <img src="../assets/Billede-3-syntest.jpg" alt="testfucker">
+                        <div class="plante-ani">
+                            <plantanimation/>
                         </div>
                         <div>
                             <RouterLink to="/information"><nav_button class="Nav_position" buttontext = "Information"/></RouterLink>
@@ -67,6 +67,10 @@ body{
     flex-direction: row;
     align-items: center;
 
+}
+
+.plante-ani{
+    width: 100%;
 }
 
 .bottom_part {
