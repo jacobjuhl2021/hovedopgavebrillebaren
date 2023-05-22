@@ -1,62 +1,74 @@
 <template>
-    <div class="containerbox">
-      <div class="info-row-container">
-        <div class="info-row1">
-          <task_button class="infobutton" @click="showText(1)" task_buttontext="Button 1"></task_button>
-          <task_button class="infobutton" @click="showText(2)" task_buttontext="Button 2"></task_button>
-          <task_button class="infobutton" @click="showText(3)" task_buttontext="Button 3"></task_button>
-          <task_button class="infobutton" @click="showText(4)" task_buttontext="Button 4"></task_button>
-        </div>
-  
-        <div class="dialogbox"> <p class="info-text" v-html="currentText"></p> </div>
+  <div class="containerbox">
+    <div class="info-row-container">
+      <div class="info-row1">
+        <task_button class="infobutton" @click="showText(1);" task_buttontext="Button 1"></task_button>
+        <task_button class="infobutton" @click="showText(2);" task_buttontext="Button 2"></task_button>
+        <task_button class="infobutton" @click="showText(3);" task_buttontext="Button 3"></task_button>
+        <task_button class="infobutton" @click="showText(4);" task_buttontext="Button 4"></task_button>
+      </div>
 
-        <div class="info-row2">
-          <task_button class="infobutton" @click="showText(5)" task_buttontext="Button 5"></task_button>
-          <task_button class="infobutton" @click="showText(6)" task_buttontext="Button 6"></task_button>
-          <task_button class="infobutton" @click="showText(7)" task_buttontext="Button 7"></task_button>
-          <task_button class="infobutton" @click="showText(8)" task_buttontext="Button 8"></task_button>
-        </div>
+      <div class="dialogbox" :class="{ synlighed: isToggled }">
+        <p class="info-text" v-html="currentText"></p>
+      </div>
+
+      <div class="info-row2">
+        <task_button class="infobutton" @click="showText(5);" task_buttontext="Button 5"></task_button>
+        <task_button class="infobutton" @click="showText(6);" task_buttontext="Button 6"></task_button>
+        <task_button class="infobutton" @click="showText(7);" task_buttontext="Button 7"></task_button>
+        <task_button class="infobutton" @click="showText(8);" task_buttontext="Button 8"></task_button>
       </div>
     </div>
+  </div>
+</template>
 
-    
-  </template>
-  
-  <script>
-  import task_button from './task_button.vue'
-  
+<script>
+import task_button from './task_button.vue'
+
 export default {
-    data() {
+  data() {
     return {
-        currentText: ''
+      currentText: '',
+      isToggled: true // Start with dialog box hidden
     };
   },
   components: {
     task_button
   },
+  mounted() {
+    document.addEventListener('click', this.handleClickOutside);
+  },
+  beforeUnmount() {
+    document.removeEventListener('click', this.handleClickOutside);
+  },
   methods: {
-        showText(textNumber) {
-            if (textNumber === 1) {
-                this.currentText = text1;
-            } else if (textNumber === 2) {
-                this.currentText = text2;
-            } else if (textNumber === 3) {
-                this.currentText = text3;
-            } else if (textNumber === 4) {
-                this.currentText = text4;
-            } else if (textNumber === 5) {
-                this.currentText = text5;
-            } else if (textNumber === 6) {
-                this.currentText = text6;
-            } else if (textNumber === 7) {
-                this.currentText = text7;
-            } else if (textNumber === 8) {
-                this.currentText = text8;
-            }
-        }
-        }
+  showText(textNumber) {
+    this.myFunction(); // Call myFunction to remove .synlighed class
+    if (textNumber === 1) {
+      this.currentText = text1;
+    } else if (textNumber === 2) {
+      this.currentText = text2;
+    } else if (textNumber === 3) {
+      this.currentText = text3;
+    } else if (textNumber === 4) {
+      this.currentText = text4;
+    } else if (textNumber === 5) {
+      this.currentText = text5;
+    } else if (textNumber === 6) {
+      this.currentText = text6;
+    } else if (textNumber === 7) {
+      this.currentText = text7;
+    } else if (textNumber === 8) {
+      this.currentText = text8;
+    }
+  },
+  myFunction() {
+    const dialogbox = document.querySelector('.dialogbox');
+    dialogbox.classList.remove('synlighed');
+  }
 
-}
+  },
+};
   
 
 var text1 = 'Grå stær udvikler sig normalt langsomt over tid og påvirker ofte begge øjne, men i forskellig grad. Symptomerne kan omfatte sløret eller diset syn, vanskeligheder med at se i svagt lys, øget følsomhed over for lys, ændringer i farvesyn og problemer med nattesyn. Nogle mennesker oplever også dobbeltsyn i det påvirkede øje.<br><br>Behandlingen for grå stær indebærer normalt kirurgi for at fjerne den uklare linse og erstatte den med en kunstig intraokulær linse (IOL).<br><br>Snak med os i butikken, vi rådgiver dig gerne mere om hvad grå stær er for en øjensygdom.';
@@ -78,6 +90,11 @@ var text8 = 'Du ansøger nemt og hurtigt via din smartphone – send en sms til 
     margin-right: 33px;
     justify-content: center;
   }
+
+  .synlighed{
+    visibility: hidden;
+  }
+
 .info-row-container {
   display: flex;
 
