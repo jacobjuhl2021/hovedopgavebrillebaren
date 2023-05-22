@@ -11,7 +11,7 @@
                             <RouterLink to="/underholdning"><nav_button class="Nav_position" buttontext = "Underholdning"/></RouterLink>
                         </div>
                         <div>
-                            <img src="../assets/Billede 3 - 70p syn-min.jpg" alt="testfucker">
+                            <img src="../assets/Billede-3-syntest.jpg" alt="testfucker">
                         </div>
                         <div>
                             <RouterLink to="/information"><nav_button class="Nav_position" buttontext = "Information"/></RouterLink>
