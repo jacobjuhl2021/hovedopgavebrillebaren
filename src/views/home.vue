@@ -8,13 +8,13 @@
                 <div class="col">
                     <div class="middle_part">
                         <div>
-                            <RouterLink to="/underholdning"><nav_button class="Nav_position" buttontext = "Underholdning"/></RouterLink>
+                            <RouterLink to="/underholdning"><nav_button class="Nav_position" buttontext = "Se synsstyrker"/></RouterLink>
                         </div>
 
                             <plantanimation/>
 
                         <div>
-                            <RouterLink to="/information"><nav_button class="Nav_position" buttontext = "Information"/></RouterLink>
+                            <RouterLink to="/information"><nav_button class="Nav_position" buttontext = "Bliv klogere"/></RouterLink>
                         </div>
                     </div>
                 </div>
