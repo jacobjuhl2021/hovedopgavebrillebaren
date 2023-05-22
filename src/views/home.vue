@@ -49,7 +49,6 @@ body{
 }
 
 .content{
-    padding-top: 75px;
     width: 100%;
     height: 810px;
     

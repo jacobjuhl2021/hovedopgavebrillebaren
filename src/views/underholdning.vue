@@ -4,7 +4,7 @@
         <div class="row" style="justify-content: space-between">
             <div class="col-6">
                 <div class="eyesight_box">
-                    <img src="../assets/brillebiksen.jpg" alt="brillebaren">
+                    <img_layout/>
                 </div>
             </div>
         
@@ -30,16 +30,19 @@
 <script>
 import task_button from '../components/task_button.vue'
 import backbutton from '../components/backbutton.vue'
+import img_layout from '../layouts/img_layout.vue';
+
 
 export default {
     data() {
     return {
-        currentText: ''
+        currentText: '',
     };
   },
   components: {
     task_button,
-    backbutton
+    backbutton,
+    img_layout
   },
   methods: {
         showText(textNumber) {
@@ -57,7 +60,7 @@ export default {
             } else if (textNumber === 6) {
                 this.currentText = 'Du kan sandsynligvis kun se skikkelser, intet vil være klart for dig! Et forstørrelsesglas på omkring 10+ vil nok være ideelt for en person med 10% syn.';
             }
-        }
+        },
     }
 }
 </script>
@@ -73,7 +76,7 @@ body {
 
 .Entertainment-text {
     position: relative;
-    margin-top: -145px;
+    margin-top: -240px;
 }
 
 .eyesight_box {
