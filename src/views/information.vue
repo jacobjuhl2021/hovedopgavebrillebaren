@@ -2,8 +2,9 @@
 <div class="information-layout">
     <backbutton/>
     <img class="information-img" src="../assets/img1.png">
+    <div class="baggrundinformation">
     <ModalComponent class="information-modalc"></ModalComponent>
-
+    </div>
     
     
  
@@ -30,9 +31,9 @@ export default {
 <style>
     body{
         background-color: #f5ede1;
-        background-image: url(../assets/baggrund.jpg);
-        background-size: contain;
+        
     }
+
     .information-layout{
         display: flex;
         flex-direction: column;

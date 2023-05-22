@@ -5,7 +5,7 @@
         <task_button class="infobutton" @click="showText(1);" task_buttontext="Grå stær"></task_button>
         <task_button class="infobutton" @click="showText(2);" task_buttontext="Grøn stær"></task_button>
         <task_button class="infobutton" @click="showText(3);" task_buttontext="Diabetisk øjensygdom"></task_button>
-        <task_button class="infobutton" @click="showText(4);" task_buttontext="Button 4"></task_button>
+        <task_button class="infobutton" @click="showText(4);" task_buttontext="Aldersplætter på nethinden - AMD"></task_button>
       </div>
 
       <div class="dialogbox" :class="{ synlighed: isToggled }">
@@ -13,10 +13,10 @@
       </div>
 
       <div class="info-row2">
-        <task_button class="infobutton" @click="showText(5);" task_buttontext="Button 5"></task_button>
-        <task_button class="infobutton" @click="showText(6);" task_buttontext="Button 6"></task_button>
-        <task_button class="infobutton" @click="showText(7);" task_buttontext="Button 7"></task_button>
-        <task_button class="infobutton" @click="showText(8);" task_buttontext="Button 8"></task_button>
+        <task_button class="infobutton" @click="showText(5);" task_buttontext="Få en øjenoperation"></task_button>
+        <task_button class="infobutton" @click="showText(6);" task_buttontext="Club Brillebaren"></task_button>
+        <task_button class="infobutton" @click="showText(7);" task_buttontext="Tilskud"></task_button>
+        <task_button class="infobutton" @click="showText(8);" task_buttontext="Afbetaling"></task_button>
       </div>
     </div>
   </div>
