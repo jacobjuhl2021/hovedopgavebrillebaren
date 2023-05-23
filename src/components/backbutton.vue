@@ -17,7 +17,11 @@
 
 <style>
 .go-back{
-    position: absolute;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 9999;
     z-index: 2;
     display: flex;
     flex-direction: row;

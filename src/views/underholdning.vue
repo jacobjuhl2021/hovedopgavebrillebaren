@@ -1,7 +1,7 @@
 <template>
     <backbutton/>
-    <div class="container">
-        <div class="row underhold-content">
+    <div class="container underhold-content">
+        <div class="row">
             <div class="col-6">
                 <div class="eyesight_box">
                     <img v-bind:src="currentImage" alt="brillebaren">
