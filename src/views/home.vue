@@ -1,8 +1,6 @@
 <template>
     <div class="content">
-        <div class="top_part">
-            <RouterLink to="/booktid"><nav_button class="Nav_position" buttontext = "Book tid"/></RouterLink>
-        </div>
+        <div class="top_part"></div>
         <div class="container">
             <div class="row justify-content-center align-items-center">
                 <div class="col">
@@ -21,7 +19,7 @@
             </div>
         </div>
         <div class="bottom_part">
-            <RouterLink to="/synsprofil"><nav_button class="Nav_position" buttontext = "Synsprofil"/></RouterLink>
+            <RouterLink to="/booktid"><nav_button class="Nav_position" buttontext = "Book tid"/></RouterLink>
         </div>
     </div>
 </template>
@@ -74,7 +72,6 @@ body{
     align-items: center;
 
 }
-
 
 
 .bottom_part {
