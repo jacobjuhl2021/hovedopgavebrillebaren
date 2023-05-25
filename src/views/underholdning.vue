@@ -2,7 +2,7 @@
     <backbutton/>
     <div class="container underhold-content">
         <div class="row">
-            <div class="col-6">
+            <div class="col-8">
                 <div class="eyesight_box">
                     <img class="img-area" v-bind:src="currentImage" alt="brillebaren">
                 </div>
@@ -11,7 +11,7 @@
                 </div>
             </div>
         
-            <div class="col-6">
+            <div class="col-4">
                 <div class="eyesight_box-btn">
                     <p class="btn_option">Vælg synsstyrke</p>
                     <task_button class="eyesight-btn" @click="showText(1)" task_buttontext = "Normalt syn 1.0"/>
@@ -84,17 +84,13 @@ body {
     background-size: cover;
 }
 
-.underhold-content{
+.underhold-content {
     margin-top: 104px;
 }
 
 .Entertainment-text {
     position: relative;
     margin-top: auto;
-}
-
-.eyesight_box {
-
 }
 
 .img-area{
@@ -106,8 +102,6 @@ body {
     display: flex;
     align-items: center;
     flex-direction: column;
-    
-
 }
 
 .btn_option {
