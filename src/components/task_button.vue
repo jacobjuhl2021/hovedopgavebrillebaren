@@ -1,10 +1,5 @@
 <template>
-  <button
-    :class="{ 'task-button': true, 'active': isActive }"
-    @click="toggleButton"
-  >
-    {{ task_buttontext }}
-  </button>
+  <button :class="{ 'task-button': true, 'active': isActive }" @click="toggleButton">{{ task_buttontext }}</button>
 </template>
 
 <script>

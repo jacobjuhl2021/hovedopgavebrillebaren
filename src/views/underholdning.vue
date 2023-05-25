@@ -4,7 +4,10 @@
         <div class="row">
             <div class="col-6">
                 <div class="eyesight_box">
-                    <img v-bind:src="currentImage" alt="brillebaren">
+                    <img class="img-area" v-bind:src="currentImage" alt="brillebaren">
+                </div>
+                <div class="Entertainment-text">
+                    {{ currentText }}
                 </div>
             </div>
         
@@ -18,9 +21,6 @@
                     <task_button class="eyesight-btn" @click="showText(5)" task_buttontext = "Svagsynsgrænse 0,3"/>
                     <task_button class="eyesight-btn" @click="showText(6)" task_buttontext = "Social blindhed 0,1"/>
                 </div>
-            </div>
-            <div class="col-6 Entertainment-text">
-                {{ currentText }}
             </div>
         </div>
     </div>
@@ -90,21 +90,23 @@ body {
 
 .Entertainment-text {
     position: relative;
-    margin-top: -110px;
+    margin-top: auto;
 }
 
 .eyesight_box {
-    left: 76px;
-    top: 124px;
-    height: 250px;
-    background-color: lightblue;
+
+}
+
+.img-area{
+    width: 100%;
+    height: auto;
 }
 
 .eyesight_box-btn {
     display: flex;
-    align-items: flex-end;
+    align-items: center;
     flex-direction: column;
-    margin-left: 40px;
+    
 
 }
 
